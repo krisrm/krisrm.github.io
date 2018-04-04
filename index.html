@@ -1,1 +1,118 @@
-Hello, world
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kris Mitchell</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>var today = new Date('<?=date('D M d Y H:i:s O');?>');</script>
+</head>
+<body>
+<!--[if lte IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<script src="js/vendor/jquery-3.0.0.min.js"></script>
+<script src="js/main.js"></script>
+
+<header class="container">
+    <div class="col-left fade-in-first">
+        <span>
+        <a class="gravatar-bkg pull-left" href="./">
+            <img class="gravatar" src="https://www.gravatar.com/avatar/143bb151503cab61feae478fc630df6c"></img>
+        </a>
+        <h1 class="title" >Kris Mitchell</h1>
+        </span>
+    </div>
+    <div class="col-right fade-in-second">
+        <p>I am a <span class="age">25</span> year old web developer from Edmonton, Alberta.
+            If you're looking for my resume, you can find that
+            <a href="resume.html">here</a> (<a href="resume.pdf">PDF</a>).
+            If you'd like to talk to me, send me an email at <a class="email"></a>.
+            If you'd like to be talked at, you can <a href="http://twitter.com/KrisRMitchell">follow me on Twitter</a>.</p>
+    </div>
+</header>
+<hr class="fade-in-second"/>
+
+<section class="container">
+    <div class="col-left ">
+        <h2 id="projects" class="fade-in-first">Projects</h2>
+    </div>
+    <div class="col-right fade-in-second">
+        <p>Here is a collection of projects I've worked on. Many are for clients who own the source code and related IP.</p>
+        <ul>
+            <li>
+                <strong>Fitness Booking System</strong>
+                <p>
+                    A web application written for a client using IBM XPages and AngularJS.
+                    Allows users to book and cancel fitness equipment and classes and report on bookings.
+                </p>
+            </li>
+            <li>
+                <strong>Purchase Statements API</strong>
+                <p>
+                    A RESTful API to allow external clients (via API key) to access invoices stored in Oracle.
+                </p>
+            </li>
+            <li>
+                <strong>Internal Homepage CMS</strong>
+                <p>
+                    My first AngularJS application. Allows users to modify and link rich content across a set of pages.
+                </p>
+            </li>
+            <li>
+                <strong>Employee Procedures Wiki</strong>
+                <p>
+                    An internal application used to write, revise, categorize, and search relevant employee procedures. Written using IBM XPages and Backbone.js.
+                </p>
+            </li>
+            <li>
+                <strong>Rail Car Tracking</strong>
+                <p>
+                    Allows a client to keep track of rail cars throughout various stages in the shipping process. Uses IBM XPages and Oracle.
+                </p>
+            </li>
+            <li>
+                <strong>NorthHorse</strong>
+                <p>A PHP website I did for a friend. Scrapes Kijiji for her horse ads, so she doesn't have to re-post them on her site.
+                <a href="http://northhorse.ca">Demo</a>
+                </p>
+            </li>
+            <li>
+                <strong>Jewel Bot</strong>
+                <p>Something I wrote to compensate for my inadequate Bejeweled skills. Written in Java, figures out jewels based on a single pixel in each cell,
+                    then uses the Robot class to control the mouse and make matches.
+                    <a href="https://github.com/krisrm/jewelbot">Source</a>
+                </p>
+            </li>
+            <li>
+                <strong>Live Name Tag</strong>
+                <p>A cool little project I did with my friend <a class="no-display-link" href="http://travisdilts.com">Travis Dilts</a>
+                    to display statistics from the social network GDGT using bluetooth, an Android phone, and a 32 character LCD display connected to
+                    an Arduinio. <a href="https://github.com/krisrm/live-nametag">Source</a></p>
+            </li>
+            <li>
+                <strong>SimpleORM</strong>
+                <p>A (simple) object relational management system written in Java by myself and partner <a href="http://logangilmour.com/">Logan Gilmour</a>.
+                    Designed to overcome the complexities and lazy-loading problems of using Hibernate in a GWT project.
+                    <a href="https://github.com/krisrm/simple-orm-gwt">Source</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>
