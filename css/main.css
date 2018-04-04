@@ -1,0 +1,250 @@
+html {
+    color: #222;
+    background: #f9f9f5;
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: 'Segoe UI', 'Source Sans Pro', Optima, Tahoma, Arial, Verdana, sans-serif
+}
+
+html.resume {
+    background: #fff;
+}
+
+* {
+    transition: all 0.1s ease-out;
+}
+
+
+
+
+.container {
+    width: auto;
+    overflow-y: hidden;
+    max-width: 910px;
+    margin: 100px auto;
+    padding: 0 80px;
+}
+
+
+
+.col-left {
+    float: left;
+    width: 45%;
+}
+
+.col-right {
+    float: right;
+    width: 55%;
+}
+
+
+
+.gravatar-bkg {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 3px solid #fff;
+    -moz-border-radius: 50%;
+    transition: border 0.3s ease-in-out;
+}
+.gravatar-bkg:hover {
+    border: 3px solid #1BA0E1;
+}
+.gravatar-bkg:hover .gravatar{
+    border: 3px solid #ccc;
+}
+
+.gravatar {
+    width: 38px;
+    height: 38px;
+    border: 3px solid #efefef;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    transition: border 0.1s ease-in-out;
+}
+
+h1.title {
+    font-size: 31px;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.resume h1 {
+    font-size: 33px;
+    font-weight:normal;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight:normal;
+}
+
+.resume h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.container p {
+    margin-top: 5px;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 50px;
+    padding: 0;
+}
+
+.resume hr {
+    margin: 20px 0;
+}
+
+
+
+@media (max-width: 900px) {
+    .container{
+        margin: 50px auto;
+        padding: 0 30px;
+    }
+    hr {
+        margin: 0 30px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .col-left, .col-right{
+        float: none;
+        width: auto;
+    }
+    .col-left {
+        padding-bottom: 10px;
+    }
+}
+
+
+.fade-in-first {
+    animation: fade-in 0.4s;
+    animation-delay: 0s;
+    animation-duration: 0.6s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    position: relative;
+}
+
+.fade-in-second {
+    animation: fade-in 0.4s;
+    animation-delay: 0.2s;
+    animation-duration: 0.6s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+.fade-in-third {
+    animation: fade-in 0.4s;
+    animation-delay: 0.4s;
+    animation-duration: 0.6s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+
+@keyframes fade-in {
+    from {opacity: 0; left: -15px;}
+    to {opacity:1; left: 0px;}
+}
+
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+a {
+    color: #1ba0e1;
+    transition: none;
+}
+a:hover {
+    color: #136f9d;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    padding-left: 8px;
+}
+
+ul li:before {
+    margin-left:-16px;
+    padding-right: 8px;
+    content: '\2013';
+    position: absolute;
+}
+
+
+
+
+.resume table td, .resume table th{
+    padding: 2px 10px 2px 0px;
+    vertical-align: top;
+}
+.resume table th{
+    text-align: left;
+}
+
+
+.res-employment h4 a, .res-projects h4 a{
+    text-decoration: none;
+}
+
+.resume body {
+    margin: 0.25in 0.35in 0.25in 0.35in;
+    width: 9.5in;
+    font-size: 17px;
+}
+
+.res-projects h4{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+@media print {
+    .resume body {
+        margin: 0.25in 0.35in 0.25in 0.35in;
+        width: 9.5in;
+        font-size: 17px;
+    }
+    .resume a {
+        text-decoration: underline;
+        color: #000;
+    }
+    .resume .display-link:after
+    {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Segoe UI, Tahoma, Arial, Verdana, sans-serif;
+        content: " (" attr(href) ")";
+    }
+    .resume .no-display-link{
+        text-decoration: none;
+    }
+
+    .resume .break {
+        page-break-before: always;
+    }
+}
